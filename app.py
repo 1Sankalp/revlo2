@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 import os
-import sys
 from langchain.document_loaders import DirectoryLoader
 from langchain.indexes import VectorstoreIndexCreator
 
@@ -28,4 +27,4 @@ def query():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
