@@ -4,10 +4,10 @@ from langchain.document_loaders import DirectoryLoader
 from langchain.indexes import VectorstoreIndexCreator
 
 from dotenv import load_dotenv
-load_dotenv()
+
 
 key = os.environ.get('OPENAI_API_KEY')
-
+load_dotenv()
 app = Flask(__name__)
 loader = DirectoryLoader(".", glob="*.txt")
 index = VectorstoreIndexCreator().from_loaders([loader])
