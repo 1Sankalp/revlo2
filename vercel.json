@@ -26,6 +26,10 @@
       {
         "src": "/(.*)",
         "dest": "/app.py"
+      },
+      {
+        "name": "dotenv",
+        "version": "^5.0.0"
       }
     ]
   }
