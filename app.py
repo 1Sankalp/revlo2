@@ -3,6 +3,9 @@ import os
 from langchain.document_loaders import DirectoryLoader
 from langchain.indexes import VectorstoreIndexCreator
 
+from dotenv import load_dotenv
+load_dotenv()
+
 key = os.environ.get('OPENAI_API_KEY')
 
 app = Flask(__name__)
