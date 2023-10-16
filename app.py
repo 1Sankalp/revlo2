@@ -3,7 +3,6 @@ import os
 from langchain.document_loaders import DirectoryLoader
 from langchain.indexes import VectorstoreIndexCreator
 
-
 from dotenv import load_dotenv
 load_dotenv()
 
